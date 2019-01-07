@@ -30,8 +30,8 @@ export default class Editor extends React.Component {
             onBlur={this.props.onBlur}
           />
           <div className='in_reply_to' id='0' />
-          <span className={`tweet_counter ${this.props.active ? 'active' : ''} ${this.props.text.length > 140 ? 'minus' : ''}`}>
-            {140 - this.props.text.length}
+          <span className={`tweet_counter ${this.props.active ? 'active' : ''} ${this.props.text.length > 280 ? 'minus' : ''}`}>
+            {280 - this.props.text.length}
           </span>
         </form>
       </div>
